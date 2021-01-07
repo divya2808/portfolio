@@ -37,5 +37,8 @@ export default {
   build: {
   },
 
-  target: 'static'
+  target: 'static',
+  router: {
+    base: '/<repository-name>/'
+  }
 }
