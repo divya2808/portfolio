@@ -1,6 +1,19 @@
 <template>
-  <div>
-    <Nuxt />
+  <div class="flex flex-col h-screen w-screen">
+    <div class="flex flex-end bg-black px-8">
+      <ul class="flex w-1/3 ml-auto justify-around px-8 my-8">
+        <li class="text-white cursor-pointer hover:text-blue-400 uppercase px-4">
+          <nuxt-link to="/about">About</nuxt-link>
+        </li>
+        <li class="text-white cursor-pointer hover:text-blue-400 uppercase px-4">
+          <nuxt-link to="/projects">Projects</nuxt-link>
+        </li>
+        <li class="text-white cursor-pointer hover:text-blue-400 uppercase px-4">
+          <nuxt-link to="/contact">Contact</nuxt-link>
+        </li>
+      </ul>
+    </div>
+    <Nuxt class="flex-grow"/>
   </div>
 </template>
 
